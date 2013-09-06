@@ -1,0 +1,21 @@
+body {
+	font-family: sans-serif;
+}
+
+h1 {
+	text-align: center;
+}
+
+ul li {
+	margin-bottom: 7px;
+	list-style-type: none;
+}
+
+ul li a {
+	font-weight: bold;
+	text-decoration: none;
+}
+
+ul li a:hover {
+	color: red;
+}
