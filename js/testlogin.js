@@ -27,6 +27,13 @@ function showCurrentText(id, element, desc) {
 	element.appendChild(textSpan);	
 }
 
+function updateCurrentText(id, desc) {
+	var field = document.getElementById('desc-' + id);
+	if (field) {
+		field.innerHTML = desc;
+	}
+}
+
 function addEditTextField(id, element) {
 	var descriptionInput = document.createElement('input');
 	descriptionInput.name = "description";
@@ -59,6 +66,7 @@ function setCurrentDescription(id, desc) {
 		var dataObj = {};
 		dataObj[id] = desc;
 		storage.set(dataObj);
+		updateCurrentText(id, desc);
 	}
 }
 
