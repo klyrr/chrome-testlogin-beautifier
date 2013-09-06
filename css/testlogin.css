@@ -13,20 +13,23 @@ ul li {
 
 ul li a {
 	font-weight: bold;
-	text-decoration: underline;
+	text-decoration: none;
 	width: 100px;
 	display: inline-block;
 	color: black;
+	background-color: #ee99f8;
+	text-align: center;
+	margin-right: 5px;
 }
 
 ul li a:hover {
-	color: red;
+	color: #9a1755;
 }
 
 span.currentDescription {
-	font-style: italic;
-	width: 400px;
+	
 	display: inline-block;
+	font-size: 0.9em;
 }
 
 span.testlogin form {
@@ -36,8 +39,4 @@ span.testlogin form {
 span.testlogin input {
 	width: 400px;
 	float: right;
-}
-
-span.testlogin {
-	lbackground-color: #ee99f8;
 }
