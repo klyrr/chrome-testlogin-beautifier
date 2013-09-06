@@ -9,6 +9,7 @@ h1 {
 ul li {
 	list-style-type: none;
 	height: 40px;
+	padding: 3px;
 }
 
 ul li a {
@@ -17,7 +18,7 @@ ul li a {
 	width: 100px;
 	display: inline-block;
 	color: black;
-	background-color: #ee99f8;
+	/* background-color: #ee99f8;*/
 	text-align: center;
 	margin-right: 5px;
 }
@@ -42,5 +43,6 @@ span.testlogin input {
 }
 
 li.odd {
-	background-color: #ffeaf2;
+	/* background-color: #ffeaf2; */
+	background-color: #f0eeee;
 }
