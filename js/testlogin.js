@@ -22,7 +22,7 @@ function beautifyElement(id, currentHTMLElement) {
 	var surroundingSpan = document.createElement('span');
 	surroundingSpan.className = "testlogin";
 	currentHTMLElement.appendChild(surroundingSpan);
-	showCurrentText(id, surroundingSpan, getCurrentDescription(id));
+	updateCurrentDescription(id, surroundingSpan);
 	addEditTextForm(id, surroundingSpan);
 }
 
@@ -50,17 +50,15 @@ function updateValue() {
 	setCurrentDescription(currentId, currentValue);
 }
 
-function getCurrentDescription(id) {
+function updateCurrentDescription(id, surroundingSpan) {
 
-	var resultDesc = " ";
 	var foobar = storage.get(null, function(result)
 	{
 		var text = result[id];
-		resultDesc = text ? text : '-';
+		if(text){
+			showCurrentText(id, surroundingSpan, text);
+		}
 	});
-	// console.log(foobar)
-	// console.log(" resultDesc2 " + id + " "  + resultDesc + " --- " + foobar);
-	return resultDesc;
 }
 
 function setCurrentDescription(id, desc) {
@@ -68,7 +66,6 @@ function setCurrentDescription(id, desc) {
 		var dataObj = {};
 		dataObj[id] = desc;
 		storage.set(dataObj);
-		console.log("gespeichert " + id);
 	}
 }
 

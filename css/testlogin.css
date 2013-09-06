@@ -13,9 +13,10 @@ ul li {
 
 ul li a {
 	font-weight: bold;
-	text-decoration: none;
+	text-decoration: underline;
 	width: 100px;
 	display: inline-block;
+	color: black;
 }
 
 ul li a:hover {
@@ -24,8 +25,19 @@ ul li a:hover {
 
 span.currentDescription {
 	font-style: italic;
+	width: 400px;
+	display: inline-block;
 }
 
 span.testlogin form {
 	display: inline-block;
+}
+
+span.testlogin input {
+	width: 400px;
+	float: right;
+}
+
+span.testlogin {
+	lbackground-color: #ee99f8;
 }
