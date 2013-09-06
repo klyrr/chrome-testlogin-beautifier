@@ -1,13 +1,14 @@
 {
   "manifest_version": 2,
-  "name": "test login",
-  "description": "This extension ",
+  "name": "test login beautifier",
+  "description": "This extension beautifies the test login page",
   "background": { "scripts": ["background.js"] },
   "version": "0.1",
   "permissions": [
       "tabs",
       "activeTab",
       "storage",
+      "unlimitedStorage",
       "http://testserver/"
   ],
   "page_action": {
@@ -15,7 +16,7 @@
     "default_popup": "test logins"
   },
   "icons" : {
-      "48" : "icon-48.png",
-      "128" : "icon-128.png"
+      "48" : "icon.png",
+      "128" : "icon.png"
     }
 }

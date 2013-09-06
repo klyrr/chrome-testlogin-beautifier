@@ -14,8 +14,18 @@ ul li {
 ul li a {
 	font-weight: bold;
 	text-decoration: none;
+	width: 100px;
+	display: inline-block;
 }
 
 ul li a:hover {
 	color: red;
+}
+
+span.currentDescription {
+	font-style: italic;
+}
+
+span.testlogin form {
+	display: inline-block;
 }
