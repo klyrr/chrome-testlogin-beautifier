@@ -3,7 +3,7 @@
   "name": "test login beautifier",
   "description": "This extension beautifies the test login page",
   "background": { "scripts": ["background.js"] },
-  "version": "0.1",
+  "version": "0.2",
   "permissions": [
       "tabs",
       "activeTab",
